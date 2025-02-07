@@ -29,4 +29,11 @@ class Ingatlan extends Model
             ];
         });
     }
+    public static function createIngatlan($data){
+        return Ingatlan::create($newdata);
+    }
+    public static function deleteIngatlan($id){
+
+        return Ingatlan::delete($id);
+    }
 }

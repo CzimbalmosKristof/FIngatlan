@@ -8,3 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('api/ingatlan',[IngatlanController::class, 'index']);
+Route::post('api/ingatlan',[IngatlanController::class, 'create']);
+Route::delete('api/ingatlan/{id}',[IngatlanController::class, 'delete']);
